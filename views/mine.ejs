@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Мой профиль</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/mine.css" type="text/css">
+    </head>
+    <body id="vueapp3">
+        <header>
+            <a href="/glav">На главную</a>
+        </header>
+        <main>
+            <div id="infa">
+                <p>Фамилия: <%=pham %></p>
+                <p>Имя: <%=imer %></p>
+                <p>Отчество: <%=otcher %></p>
+                <p>Логин: <%=loger %></p>
+                <p id="nizh">Класс: <%=klasser %></p>
+                <button v-on:click="ishod" id="verhbut">Выйти из аккаунта</button><br>
+                <button><a href="/zaglushka/editing">Редактировать<br>профиль</a></button><br>
+                <button><a href="/zaglushka/editpassword">Изменить пароль</a></button><br>
+                <button><a href="/zaglushka/delete/">Удалить аккаунт</a></button><br>
+            </div>
+            <div id="moidostig">
+                <p>Мои достижения</p>
+                <div id="vnutr">
+                    <%-vsedost%>
+                </div>
+            </div>
+        </main>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="/script3.js"></script>
+    </body>
+</html>

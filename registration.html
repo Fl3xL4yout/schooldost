@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="forms1.css" type="text/css">
+        <title>Регистрация</title>
+    </head>
+    <body>
+        <div class="theforma" id="vueapp2">
+            <div id="nagl"><a href="/glav">Перейти на главную</a></div>
+            <form name="regForm" method="post">
+                <p>Фамилия:</p>
+                <p>Имя:</p>
+                <p>Отчество:</p>
+                <p>Класс:</p>
+                <p>Буква:</p>
+                <p>Логин:</p>
+                <p>Пароль:</p>
+                <p>Подтвердите<br> пароль:</p>
+                <div id="spec"><button type="submit" >Зарегистрироваться</button></div>
+                <input name="surname" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="surname" spellcheck="false">
+                <input name="name" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="name" spellcheck="false">
+                <input name="midname" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="midname" spellcheck="false">
+                <input name="classer" type="number" id="classer" min="1" max="11" spellcheck="false">
+                <input type="text" name="bukva" id="bukva" pattern="[А-ЯЁ]{1}" title="1 символ; допустимые символы: А-Я" spellcheck="false">
+                <input name="loginer" type="text" pattern="[A-Za-z0-9]{6,16}" id="loginer" spellcheck="false" title="От 6 до 16 символов; допустимые символы: A-Z, a-z, 0-9">
+                <input name="passer" type="password" pattern="[A-Za-z0-9]{6,16}" id="passer" spellcheck="false" title="От 6 до 16 символов; допустимые символы: A-Z, a-z, 0-9"> 
+                <input name="passer2" type="password" pattern="[A-Za-z0-9]{6,16}" id="passer2" spellcheck="false" title="От 6 до 16 символов; допустимые символы: A-Z, a-z, 0-9">
+            </form>
+            <p v-show="provpass" id="vnim"></p>
+            <p id="niz">Уже зарегистрированы?<br>
+                        <a href="/zaglushka/loginning" id="ssniz">Войти</a></p>
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="/forms4.css" type="text/css">
+        <title>Изменение информации</title>
+    </head>
+    <body>
+        <div class="theforma" id="vueapp6">
+            <form name="editForm" method="post">
+                <p>Фамилия:</p>
+                <p>Имя:</p>
+                <p>Отчество:</p>
+                <p>Класс:</p>
+                <p>Буква:</p>
+                <p>Логин:</p>
+                <div class="spec"><button id="levbut"><a href="/profile/<%=loger %>">Отмена</a></button></div>
+                <input name="surname" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="surname" spellcheck="false" value="<%=pham %>">
+                <input name="name" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="name" spellcheck="false" value="<%=imer %>">
+                <input name="midname" type="text" pattern="[А-Яа-яЁё]{2,}" title="Минимум 2 символа; допустимые символы: А-Я, а-я" id="midname" spellcheck="false" value="<%=otcher %>">
+                <input name="classer" type="number" id="classer" min="1" max="11" spellcheck="false" value="<%=cifra %>">
+                <input type="text" name="bukva" id="bukva" pattern="[А-ЯЁ]{1}" title="1 символ; допустимые символы: А-Я" spellcheck="false" value="<%=bukva %>">
+                <input name="loginer" type="text" pattern="[A-Za-z0-9]{6,16}" id="loginer" spellcheck="false" title="От 6 до 16 символов; допустимые символы: A-Z, a-z, 0-9" value="<%=loger %>">
+                <div class="spec"><button type="submit">Сохранить</button></div>
+            </form>
+            <p v-show="provpass" id="vnim"></p>
+            <p class="unvis" id="unvis"><%=loger %></p>
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="/script6.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(215, 215, 215);
+}
+
+.theforma {
+  color: rgb(35, 35, 35);
+  background-color: rgb(190, 190, 190);
+  font-size: 1.75vw;
+  padding: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.7vw;
+  border: 0.3vw solid rgb(70, 70, 70);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.theforma form {
+  display: -ms-grid;
+  display: grid;
+  background-color: inherit;
+  -ms-grid-columns: -webkit-max-content 2.5vw -webkit-max-content;
+  -ms-grid-columns: max-content 2.5vw max-content;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  -ms-grid-rows: -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content;
+  -ms-grid-rows: max-content 1.5vh max-content 1.5vh max-content;
+  grid-template-rows: repeat(3, -webkit-max-content);
+  grid-template-rows: repeat(3, max-content);
+  -webkit-column-gap: 2.5vw;
+     -moz-column-gap: 2.5vw;
+          column-gap: 2.5vw;
+  row-gap: 1.5vh;
+  grid-auto-flow: column;
+}
+.theforma form > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.theforma form > *:nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.theforma form > *:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.theforma form > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.theforma form > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.theforma form > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.theforma form .spec {
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.theforma form .spec button {
+  color: rgb(35, 35, 35);
+  font-size: 1.85vw;
+  border: 0.3vw solid rgb(35, 35, 35);
+  padding: 0.5%;
+  background-color: rgb(215, 215, 215);
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.theforma form #levbut {
+  margin: 0 auto 0 0;
+}
+.theforma form #levbut a, .theforma form #levbut a:visited, .theforma form #levbut a:active {
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+  background-color: inherit;
+}
+.theforma input, .theforma textarea {
+  outline: none;
+  border: 0.3vw solid rgb(70, 70, 70);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: rgb(35, 35, 35);
+  resize: none;
+  font-size: 1.75vw;
+  background-color: rgb(215, 215, 215);
+}
+.theforma p {
+  background-color: inherit;
+  vertical-align: middle;
+  color: rgb(35, 35, 35);
+}
+.theforma #vnim {
+  background-color: inherit;
+  font-weight: bold;
+  color: rgb(255, 40, 40);
+  text-align: center;
+  margin-top: 1vh;
+  font-size: 1.75vw;
+}
+
+.input-file {
+  background-color: inherit;
+  position: relative;
+}
+
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.2vw;
+  background-color: rgb(215, 215, 215);
+  text-align: center;
+  border: 0.3vw solid rgb(70, 70, 70);
+  padding: 0.2vw;
+  max-width: 35vw;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}

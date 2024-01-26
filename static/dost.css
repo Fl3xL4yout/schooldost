@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+header {
+  border-bottom: 0.3vw solid rgb(70, 70, 70);
+  background-color: rgb(235, 235, 235);
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  font-size: 5vh;
+  padding: 1vh 0 1vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+header a, header a:visited, header a:active, header p {
+  background-color: inherit;
+  overflow-y: hidden;
+  height: 6vh;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0.8vh;
+}
+header p {
+  text-decoration: none;
+}
+header div {
+  text-align: center;
+  background-color: inherit;
+  overflow-y: hidden;
+  background-color: rgb(85, 85, 85);
+  border-radius: 0.5vw;
+  border: 0.2vw solid rgb(35, 35, 35);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 4.5vw 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+header div a, header div a:visited, header div a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: auto 0.8vw auto 0.8vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main {
+  margin-top: 10vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  header {
+    display: block;
+  }
+  header div {
+    margin: 0;
+  }
+}
+#dobphoto {
+  text-decoration: none;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 0.85vw;
+  border: 0.2vw solid rgb(70, 70, 70);
+  font-size: 2.3vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(170, 170, 170);
+  padding: 0.3%;
+}
+#dobphoto p {
+  background-color: inherit;
+}
+#dobphoto #texter {
+  margin-left: 1vw;
+  text-align: center;
+}
+#dobphoto #pluser {
+  rotate: 90deg;
+  padding-top: 1vw;
+  vertical-align: middle;
+}
+
+#mainer {
+  padding: 1vw;
+  margin-top: 10vh;
+}
+
+#bloki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5vh;
+}
+
+h2 {
+  font-size: 2.3vw;
+  margin-bottom: 3vh;
+}
+
+.izodiv {
+  margin-bottom: 3vh;
+  text-align: center;
+  margin-right: 3vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+  border: 0.2vw solid rgb(70, 70, 70);
+  border-radius: 0.7vw;
+  background-color: rgb(190, 190, 190);
+  word-break: break-all;
+  max-width: 35vw;
+}
+.izodiv p {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  background-color: inherit;
+  margin-top: 2vh;
+  font-size: 1.35vw;
+  margin-bottom: 1.3vh;
+}
+.izodiv #trix {
+  background-color: inherit;
+}
+.izodiv button {
+  cursor: pointer;
+  border: 0.2vw solid rgb(70, 70, 70);
+  padding: 0.2vw;
+  display: inline-block;
+  font-size: 1.2vw;
+  background-color: rgb(160, 160, 160);
+  border-radius: 0.3vw;
+}
+.izodiv img {
+  border: 0.2vw solid rgb(70, 70, 70);
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.3vw;
+}
+.izodiv img {
+  height: 22vh;
+}
+
+.chel {
+  margin-bottom: 3vh;
+  text-align: center;
+  margin-right: 3vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+  border: 0.2vw solid rgb(70, 70, 70);
+  border-radius: 0.7vw;
+  margin-top: 5vh;
+}
+.chel p {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  background-color: inherit;
+  margin-top: 2vh;
+  font-size: 1.35vw;
+  margin-bottom: 1.3vh;
+}
+.chel #trix {
+  background-color: inherit;
+}
+.chel button {
+  cursor: pointer;
+  border: 0.2vw solid rgb(70, 70, 70);
+  padding: 0.2vw;
+  display: inline-block;
+  font-size: 1.2vw;
+  background-color: rgb(160, 160, 160);
+  border-radius: 0.3vw;
+}
+.chel img {
+  border: 0.2vw solid rgb(70, 70, 70);
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.3vw;
+}
+.chel p {
+  font-size: 1.65vw;
+}
+
+.unshow {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.unvis {
+  display: none;
+}

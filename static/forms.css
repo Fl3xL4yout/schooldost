@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+header {
+  height: auto;
+  font-size: 5vh;
+  padding-right: 1vw;
+  padding-left: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3vh;
+  margin-top: 1vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header a, header a:visited, header a:active {
+  height: 6vh;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0.8vh;
+}
+header div {
+  background-color: rgb(85, 85, 85);
+  border-radius: 0.5vw;
+  border: 0.2vw solid rgb(255, 255, 255);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 0 0 auto;
+  height: 6vh;
+  line-height: 6vh;
+}
+header div a, header div a:visited, header div a:active {
+  color: rgb(255, 255, 255);
+  background-color: inherit;
+  text-decoration: none;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  font-size: 3.5vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(215, 215, 215);
+}
+
+.theforma {
+  color: rgb(35, 35, 35);
+  background-color: rgb(190, 190, 190);
+  font-size: 2.5vh;
+  padding: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.7vw;
+  border: 0.2vw solid rgb(70, 70, 70);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.theforma form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content 1.5vh -webkit-max-content;
+  -ms-grid-rows: max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content 1.5vh max-content;
+  grid-template-rows: repeat(9, -webkit-max-content);
+  grid-template-rows: repeat(9, max-content);
+  -webkit-column-gap: 2.5vw;
+     -moz-column-gap: 2.5vw;
+          column-gap: 2.5vw;
+  row-gap: 1.5vh;
+  grid-auto-flow: column;
+}
+.theforma form #spec {
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  -ms-grid-row-span: 1;
+  grid-row-end: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.theforma form #spec button {
+  font-size: 3vh;
+  border: 0.2vw solid rgb(35, 35, 35);
+  padding: 0.5%;
+  background-color: rgb(215, 215, 215);
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.theforma input {
+  background-color: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  outline: none;
+  border: 0.2vw solid rgb(70, 70, 70);
+  font-size: 2.5vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(215, 215, 215);
+}
+.theforma p {
+  background-color: inherit;
+  vertical-align: middle;
+}
+.theforma #nagl {
+  background-color: inherit;
+  width: 100%;
+  border-bottom: 0.2vw solid rgb(70, 70, 70);
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+.theforma #nagl a, .theforma #nagl a:visited, .theforma #nagl a:active {
+  color: rgb(35, 35, 35);
+  font-size: 3vh;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: inherit;
+}
+.theforma #vnim {
+  background-color: inherit;
+  font-weight: bold;
+  color: rgb(255, 40, 40);
+  text-align: center;
+  margin-top: 1vh;
+  font-size: 3vh;
+}
+
+#niz {
+  background-color: inherit;
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 2.7vh;
+}
+#niz a, #niz a:visited, #niz a:active {
+  color: rgb(58, 109, 219);
+  text-decoration: none;
+  background-color: inherit;
+}

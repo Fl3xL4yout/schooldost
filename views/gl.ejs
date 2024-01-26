@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="gl.css" type="text/css">
+    </head>
+    <body id="vueapp1">
+        <header id="head">
+            <p>Достижения учеников<br>лицея №34</p>
+            <div><a :href="refer">Мой профиль</a></div>
+        </header>
+        <main id="mainer">
+            <% for (let i = 0; i < nitro.length; i++) {%>
+                <div class="glvid">
+                    <div class="proba" :id="<%=i%>" v-on:click="smenaform(<%=i%>)"><p><span><%-suber[i]%></span></p><span class="plusik" :id="'plus' + <%=i%>">+</span></div>
+                    <%-nitro[i]%>
+                </div>
+            <% } %>
+        </main>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="forms3.css" type="text/css">
+        <title>Удаление аккаунта</title>
+    </head>
+    <body>
+        <div class="theforma" id="vueapp5">
+            <div id="nagl">Для удаления аккаунта <br> введите пароль</div>
+            <form name="delForm" method="post">
+                <p>Пароль:</p>
+                <div class="spec"><button id="levbut"><a :href="refer">Отмена</a></button></div>
+                <input name="passer" type="password" pattern="[A-Za-z0-9]{6,16}" id="passer" spellcheck="false" title="От 6 до 16 символов; допустимые символы: A-Z, a-z, 0-9">
+                <div class="spec"><button type="submit">Удалить аккаунт</button></div>
+            </form>
+            <p v-show="provpass" id="vnim"></p>
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script5.js"></script>
+    </body>
+</html>

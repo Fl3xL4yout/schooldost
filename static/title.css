@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+header {
+  border-bottom: 0.2vw solid rgb(70, 70, 70);
+  background-color: rgb(235, 235, 235);
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  font-size: 5vh;
+  padding: 1vh 0 1vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+header a, header a:visited, header a:active, header p {
+  background-color: inherit;
+  overflow-y: hidden;
+  height: 6vh;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0.8vh;
+}
+header p {
+  text-decoration: none;
+}
+header div {
+  text-align: center;
+  background-color: inherit;
+  overflow-y: hidden;
+  background-color: rgb(85, 85, 85);
+  border-radius: 0.5vw;
+  border: 0.2vw solid rgb(35, 35, 35);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 4.5vw 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+header div a, header div a:visited, header div a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: auto 0.8vw auto 0.8vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main {
+  margin-top: 10vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  header {
+    display: block;
+  }
+  header div {
+    margin: 0;
+  }
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.obsh {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0);
+  height: 100vh;
+  color: #f1f1f1;
+  width: 100vw;
+}
+
+.verh {
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chtob {
+  padding: 0.6vw;
+  background-color: inherit;
+  border: 0.2vw solid rgb(70, 70, 70);
+  margin-right: 5vw;
+  background-color: rgb(215, 215, 215);
+  border-radius: 0.7vw;
+  text-align: center;
+  font-size: 2vw;
+}
+.chtob p {
+  margin-bottom: 0.75vh;
+  margin-top: 0.75vh;
+}
+.chtob a {
+  border: 0.2vw solid rgb(70, 70, 70);
+  text-decoration: none;
+  background-color: rgb(180, 180, 180);
+  border-radius: 0.5vw;
+  padding: 0.15vw;
+}
+
+.text {
+  background-color: inherit;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.text p {
+  background-color: inherit;
+  color: black;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+#nizh {
+  width: 100vw;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+#nizh a {
+  background-color: inherit;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 3vw;
+  color: white;
+  text-decoration: none;
+}

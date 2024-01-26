@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(215, 215, 215);
+}
+
+.theforma {
+  color: rgb(35, 35, 35);
+  background-color: rgb(190, 190, 190);
+  font-size: 1.85vw;
+  padding: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.7vw;
+  border: 0.3vw solid rgb(70, 70, 70);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.theforma form {
+  display: -ms-grid;
+  display: grid;
+  background-color: inherit;
+  -ms-grid-columns: -webkit-max-content 2.5vw -webkit-max-content;
+  -ms-grid-columns: max-content 2.5vw max-content;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  -webkit-column-gap: 2.5vw;
+     -moz-column-gap: 2.5vw;
+          column-gap: 2.5vw;
+  row-gap: 1.5vh;
+  grid-auto-flow: column;
+}
+.theforma form #spec {
+  background-color: inherit;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.theforma form #spec button {
+  font-size: 2.1vw;
+  border: 0.3vw solid rgb(35, 35, 35);
+  padding: 0.5%;
+  background-color: rgb(215, 215, 215);
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: rgb(35, 35, 35);
+}
+.theforma input {
+  background-color: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  outline: none;
+  border: 0.3vw solid rgb(70, 70, 70);
+  font-size: 1.8vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(215, 215, 215);
+  color: rgb(35, 35, 35);
+}
+.theforma p {
+  background-color: inherit;
+  vertical-align: middle;
+  color: rgb(35, 35, 35);
+}
+.theforma #nagl {
+  background-color: inherit;
+  width: 100%;
+  border-bottom: 0.3vw solid rgb(70, 70, 70);
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+.theforma #nagl a, .theforma #nagl a:visited, .theforma #nagl a:active {
+  color: rgb(35, 35, 35);
+  font-size: 1.9vw;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: inherit;
+}
+.theforma #vnim {
+  background-color: inherit;
+  font-weight: bold;
+  color: rgb(255, 40, 40);
+  text-align: center;
+  margin-top: 1vh;
+  font-size: 2vw;
+}
+
+#niz {
+  background-color: inherit;
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 1.9vw;
+}
+#niz a, #niz a:visited, #niz a:active {
+  color: rgb(58, 109, 219);
+  text-decoration: none;
+  background-color: inherit;
+}
+
+form {
+  -ms-grid-rows: (-webkit-max-content)[9];
+  -ms-grid-rows: (max-content)[9];
+  grid-template-rows: repeat(9, -webkit-max-content);
+  grid-template-rows: repeat(9, max-content);
+}
+form #spec {
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  -ms-grid-row-span: 1;
+  grid-row-end: 10;
+}

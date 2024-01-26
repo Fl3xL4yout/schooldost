@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  background-color: rgb(215, 215, 215);
+  color: rgb(70, 70, 70);
+}
+
+header {
+  border-bottom: 0.2vw solid rgb(70, 70, 70);
+  background-color: rgb(235, 235, 235);
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  font-size: 5vh;
+  padding: 1vh 0 1vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+header a, header a:visited, header a:active, header p {
+  background-color: inherit;
+  overflow-y: hidden;
+  height: 6vh;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0.8vh;
+}
+header p {
+  text-decoration: none;
+}
+header div {
+  text-align: center;
+  background-color: inherit;
+  overflow-y: hidden;
+  background-color: rgb(85, 85, 85);
+  border-radius: 0.5vw;
+  border: 0.2vw solid rgb(35, 35, 35);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 4.5vw 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+header div a, header div a:visited, header div a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: auto 0.8vw auto 0.8vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main {
+  margin-top: 10vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  header {
+    display: block;
+  }
+  header div {
+    margin: 0;
+  }
+}
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content 2vw -webkit-max-content 2vw -webkit-max-content 2vw -webkit-max-content;
+  -ms-grid-columns: max-content 2vw max-content 2vw max-content 2vw max-content;
+  grid-template-columns: repeat(4, -webkit-max-content);
+  grid-template-columns: repeat(4, max-content);
+  -webkit-column-gap: 2vw;
+     -moz-column-gap: 2vw;
+          column-gap: 2vw;
+  padding: 0.5vw;
+  overflow-y: auto;
+}
+
+.proba {
+  overflow-y: hidden;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 0.85vw;
+  border: 0.2vw solid rgb(70, 70, 70);
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 1.5vh;
+  background-color: rgb(170, 170, 170);
+  padding-left: 1vw;
+  padding-right: 0.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.proba p {
+  padding-bottom: 0.75vh;
+  background-color: inherit;
+}
+.proba p span {
+  background-color: inherit;
+  word-break: break-all;
+}
+.proba .plusik {
+  padding-bottom: 0.5vh;
+  background-color: inherit;
+  margin: auto 0 auto 0;
+  margin-left: 2vw;
+  margin-right: 0.5vw;
+  -webkit-transition: rotate 2s, color 2s;
+  transition: rotate 2s, color 2s;
+}
+
+.dosti {
+  overflow-y: hidden;
+  width: auto;
+  height: auto;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  margin-bottom: 2vh;
+}
+.dosti p {
+  font-size: 1vw;
+}
+
+.prev {
+  height: 0;
+}
+
+.next {
+  height: 6vh;
+}
+
+.plusafter {
+  rotate: 360deg;
+  color: rgb(170, 170, 170);
+}
+
+header p {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media (max-width: 1041px) {
+  main {
+    margin-top: 23.5vh;
+  }
+}
+@media (max-width: 621px) {
+  main {
+    margin-top: 29vh;
+  }
+}

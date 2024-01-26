@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="dob.css" type="text/css">
+        <title>Добавление достижения</title>
+    </head>
+    <body>
+        <div class="theforma" id="vueapp8">
+            <form name="addIzobrForm" method="post" enctype="multipart/form-data" :action="refer2">
+                <p>Описание<br>достижения:</p>
+                <p>Изображение<br>достижения<br>(.jpg, .jpeg, .png):</p>
+                <div class="spec"><button id="levbut"><a :href='refer1'>Отмена</a></button></div>
+                <textarea name="opisanie" id="opisanie" cols="33" rows="11" spellcheck="false" placeholder="(Диплом/сертификат/грамота и т.д.) (по предмету /за учёбу и т.д.)" pattern="[А-Яа-яЁё]{6,}" title="Минимум 6 символов; допустимые символы: А-Я, а-я"></textarea>
+                <label class="input-file">
+                    <input name="filer" id="filer" type="file" accept=".jpg, .jpeg, .png" spellcheck="false" v-on:change="smenatexta">
+                    <span id="spaner">Выберите файл</span>
+                </label>
+                <div class="spec"><button type="submit">Сохранить</button></div>
+            </form>
+            <p v-show="provpass" id="vnim"></p>
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script8.js"></script>
+    </body>
+</html>
